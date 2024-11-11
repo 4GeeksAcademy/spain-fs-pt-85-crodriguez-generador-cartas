@@ -11,8 +11,15 @@ window.onload = function() {
     numbers[randomNumber];
   let randomPalo = Math.floor(Math.random() * palos.length);
   const paloAleatorio = palos[randomPalo];
+
   const elementosPalo = document.getElementsByClassName("palo");
   for (let i = 0; i < elementosPalo.length; i++) {
     elementosPalo[i].textContent = paloAleatorio;
+
+    if (paloAleatorio === "♦" || paloAleatorio === "♥") {
+      elementosPalo[i].style.color = "red";
+    } else {
+      elementosPalo[i].style.color = "black";
+    }
   }
 };

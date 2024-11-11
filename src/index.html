@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de cartas aleatorio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -16,18 +21,29 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body class="bg-success">
-    <div class="container card bg-white rounded p-2 col-md-4">
-      <div class="col align-self-start">
-        <h1 class="palo"></h1>
-      </div>
-      <div class="col align-self-center">
-        <h1 class="number"></h1>
-      </div>
-      <div class="col align-self-end">
-        <h1 class="palo"></h1>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div
+        class="card bg-white rounded-4 p-3 mx-auto d-flex flex-column card-aspect"
+      >
+        <div class="row flex-fill align-items-start">
+          <div class="col text-start">
+            <h1 class="palo"></h1>
+          </div>
+        </div>
+        <div class="row flex-fill double-height align-items-center">
+          <div class="col text-center">
+            <h1 class="number"></h1>
+          </div>
+        </div>
+        <div class="row flex-fill align-items-end">
+          <div class="col text-end">
+            <h1 class="palo"></h1>
+          </div>
+        </div>
       </div>
     </div>
 

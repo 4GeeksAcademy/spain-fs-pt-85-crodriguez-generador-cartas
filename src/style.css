@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  font-family: "Tinos", "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 50px;
+}
+.card-aspect {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  max-width: 300px;
+}
+
+.double-height {
+  flex: 2;
+}
+
+.flex-fill {
+  flex: 1;
+}
